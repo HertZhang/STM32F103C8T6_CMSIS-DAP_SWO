@@ -10,7 +10,6 @@
       <TargetName>STM32F103-BLUEPILL</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -148,7 +147,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>3</TargetSelection>
+          <TargetSelection>12</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -162,7 +161,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>Segger\JL2CM3.dll</Driver>
+            <Driver>BIN\CMSIS_AGDI.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -228,7 +227,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -365,16 +363,11 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD BLUEPILL SWO_PB7 SWD_REMAP</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CMSIS-DAP;.\USB;.\User;.\Driver\STM32F10x_ARM_Driver;.\Driver\STM32F10x_StdPeriph_Driver\inc;C:\Keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include;C:\Keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Driver\Include</IncludePath>
+              <IncludePath>.\CMSIS-DAP;.\USB;.\User;.\Driver\STM32F10x_ARM_Driver;.\Driver\STM32F10x_StdPeriph_Driver\inc;C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.4.0\CMSIS\Driver\Include;C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.4.0\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,7 +380,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -546,7 +538,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -556,7 +548,6 @@
       <TargetName>STM32F103-BOARD_V1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -694,7 +685,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>3</TargetSelection>
+          <TargetSelection>12</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -708,7 +699,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>Segger\JL2CM3.dll</Driver>
+            <Driver>BIN\CMSIS_AGDI.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -774,7 +765,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -911,16 +901,11 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD BOARD_V1 SWO_PA10</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CMSIS-DAP;.\USB;.\User;.\Driver\STM32F10x_ARM_Driver;.\Driver\STM32F10x_StdPeriph_Driver\inc;C:\Keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include;C:\Keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Driver\Include</IncludePath>
+              <IncludePath>.\CMSIS-DAP;.\USB;.\User;.\Driver\STM32F10x_ARM_Driver;.\Driver\STM32F10x_StdPeriph_Driver\inc;C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.4.0\CMSIS\Include;C:\Keil_v5\ARM\Pack\ARM\CMSIS\5.4.0\CMSIS\Driver\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -933,7 +918,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1092,7 +1076,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -1102,7 +1086,6 @@
       <TargetName>STM32F102-BOARD_V2</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F102C8</Device>
@@ -1240,7 +1223,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>3</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -1320,7 +1303,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -1457,11 +1439,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD BOARD_V2 STM32F102C8 SWO_PA10</Define>
@@ -1479,7 +1456,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1638,7 +1614,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -1648,7 +1624,6 @@
       <TargetName>STM32F103-BOARD_V2</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -1866,7 +1841,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -2003,11 +1977,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD BOARD_V2 SWO_PA10</Define>
@@ -2025,7 +1994,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -2184,7 +2152,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -2194,7 +2162,6 @@
       <TargetName>STM32F103-STLINK_V20</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -2412,7 +2379,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -2549,11 +2515,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD STLINK_V20 SWO_PA10</Define>
@@ -2571,7 +2532,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -2730,7 +2690,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -2740,7 +2700,6 @@
       <TargetName>STM32F103-STLINK_V21</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -2958,7 +2917,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -3095,11 +3053,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD STLINK_V21 SWO_PA10</Define>
@@ -3117,7 +3070,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -3276,7 +3228,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -3286,7 +3238,6 @@
       <TargetName>STM32RF</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
@@ -3504,7 +3455,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -3641,11 +3591,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD BOARD_STM32RF SWO_PA10</Define>
@@ -3663,7 +3608,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -3822,7 +3766,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -3832,7 +3776,6 @@
       <TargetName>STM32F103-STLINK_V2A</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103CB</Device>
@@ -4050,7 +3993,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -4187,11 +4129,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD STLINK_V2A SWO_PA10</Define>
@@ -4209,7 +4146,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -4368,7 +4304,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -4378,7 +4314,6 @@
       <TargetName>STM32F103-STLINK_V2B</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103CB</Device>
@@ -4596,7 +4531,6 @@
             <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
-            <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
             <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
@@ -4733,11 +4667,6 @@
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
-            <vShortEn>0</vShortEn>
-            <vShortWch>0</vShortWch>
-            <v6Lto>0</v6Lto>
-            <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER STM32F10X_MD STLINK_V2B SWO_PA10</Define>
@@ -4755,7 +4684,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -4914,7 +4842,7 @@
             <File>
               <FileName>USB_CM3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\Keil\ARM\RV31\LIB\USB_CM3.lib</FilePath>
+              <FilePath>C:\Keil_v5\ARM\RV31\LIB\USB_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>

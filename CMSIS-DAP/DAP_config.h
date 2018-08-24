@@ -280,8 +280,8 @@ typedef enum Pin_e {
 
 // SWDIO/TMS Pin
 #define PIN_SWDIO_TMS_PORT  GPIOA
-#define PIN_SWDIO_TMS_PIN   2         //PA2 conflict with USART2
-#error "PA2 conflict with USART2, Please remove USART-CDC function or change PIN_SWDIO_TMS_PIN!!!!"
+#define PIN_SWDIO_TMS_PIN   0         //PA2 conflict with USART2
+//#error "PA2 conflict with USART2, Please remove USART-CDC function or change PIN_SWDIO_TMS_PIN!!!!"
 
 // SWCLK/TCK Pin
 #define PIN_SWCLK_TCK_PORT  GPIOA

@@ -1,6 +1,7 @@
 # STM32F103C8T6_CMSIS-DAP_SWO
 -----------------------------
-
+compile succ under keil uVision V5.15 with CMSIS 5.4.0
+-----------------------------
 Based x893's code on: https://github.com/x893/CMSIS-DAP
 
 My contribution is:
