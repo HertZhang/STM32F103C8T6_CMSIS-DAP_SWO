@@ -279,13 +279,15 @@ typedef enum Pin_e {
 #elif defined ( BOARD_V1 )
 
 // SWDIO/TMS Pin
-#define PIN_SWDIO_TMS_PORT  GPIOA
-#define PIN_SWDIO_TMS_PIN   0         //PA2 conflict with USART2
+#define PIN_SWDIO_TMS_PORT  GPIOB
+#define PIN_SWDIO_TMS_PIN   14         //PA2 conflict with USART2
 //#error "PA2 conflict with USART2, Please remove USART-CDC function or change PIN_SWDIO_TMS_PIN!!!!"
 
+
+
 // SWCLK/TCK Pin
-#define PIN_SWCLK_TCK_PORT  GPIOA
-#define PIN_SWCLK_TCK_PIN   4
+#define PIN_SWCLK_TCK_PORT  GPIOB
+#define PIN_SWCLK_TCK_PIN   13
 
 // TDO/SWO Pin (input)
 #define PIN_TDO_PORT        GPIOA
@@ -296,8 +298,8 @@ typedef enum Pin_e {
 #define PIN_TDI_PIN         7
 
 // nRESET Pin
-#define PIN_nRESET_PORT     GPIOA
-#define PIN_nRESET_PIN      6
+#define PIN_nRESET_PORT     GPIOB
+#define PIN_nRESET_PIN      0
 
 #elif defined ( BOARD_V2 )
 
@@ -398,15 +400,15 @@ typedef enum Pin_e {
 #elif defined ( BOARD_V1 ) || defined ( BOARD_V2 )
 
 #define LED_CONNECTED_RCC   RCC_APB2ENR_IOPBEN
-#define LED_RUNNING_RCC     RCC_APB2ENR_IOPBEN
+#define LED_RUNNING_RCC     RCC_APB2ENR_IOPAEN
 
 // Connected LED (GREEN)
 #define LED_CONNECTED_PORT  GPIOB
-#define LED_CONNECTED_PIN   13
+#define LED_CONNECTED_PIN   6
 
 // Target Running LED (RED)
-#define LED_RUNNING_PORT    GPIOB
-#define LED_RUNNING_PIN     12
+#define LED_RUNNING_PORT    GPIOA
+#define LED_RUNNING_PIN     9
 
 #elif defined ( STLINK_V20 ) \
   ||  defined ( STLINK_V2A ) \

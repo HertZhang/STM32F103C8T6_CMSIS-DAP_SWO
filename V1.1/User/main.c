@@ -330,6 +330,15 @@ void PORT_SWD_SETUP()
   
   GPIO_INIT(PIN_SWCLK_TCK_PORT, INIT_SWD_SWCLK_SWDIO);
   
+	{
+		// to compatible with DAPLink, not gonna to use, need set input when start.
+		GPIO_InitTypeDef gpio;
+		gpio.GPIO_Pin = GPIO_Pin_12;	
+		gpio.GPIO_Mode = GPIO_Mode_IN_FLOATING;   
+		gpio.GPIO_Speed = GPIO_Speed_50MHz; 
+		GPIO_Init(GPIOB, &gpio);
+	}
+
   PIN_nRESET_OUT(0U);
   Delayms(100);
   PIN_nRESET_OUT(1U);
