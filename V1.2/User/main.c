@@ -206,7 +206,7 @@ int main(void)
     pUserAppDescriptor->UserInit((CoreDescriptor_t *)&CoreDescriptor);
   }
   Delayms(10);
-
+	
   // USB Device Initialization and connect
   usbd_init();
   usbd_connect(__TRUE);
@@ -281,6 +281,9 @@ const GPIO_InitTypeDef INIT_PIN_USB_CONNECT = {
 
 void PORT_USB_CONNECT_SETUP(void)
 {
+  RCC->APB2ENR |=  RCC_APB2ENR_AFIOEN;
+  AFIO->MAPR   |=  AFIO_MAPR_SWJ_CFG_JTAGDISABLE;
+
 #ifdef PIN_USB_CONNECT_PORT
   RCC->APB2ENR |= PIN_USB_CONNECT_RCC;
   PIN_USB_CONNECT_OFF();
@@ -467,7 +470,7 @@ void BoardInit(void)
   RCC->APB2ENR |=  RCC_APB2ENR_AFIOEN;
   AFIO->MAPR   |=  AFIO_MAPR_SWJ_CFG_DISABLE;
 #endif
-
+	
   // Enable GPIO clock
   RCC->APB2ENR |= (RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN | RCC_APB2ENR_IOPCEN);
   // Reset all GPIO pins, except USB/SWD port
