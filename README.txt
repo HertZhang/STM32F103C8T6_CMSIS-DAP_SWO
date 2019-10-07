@@ -10,8 +10,10 @@ V1.3 match to nanoDAP V2.1 with DAPLink
 just V1.2 source code, but link the system image to 0x0800C000,
 so you can drag and drop, use DAPLink bootloader to upgrade to cmsis-dap system. :)
 
+V1.4 match to nanoDAP V2.3
+just modify usb enum gpio to PB15
 
 ps:
-current pcb support both cmsis-dap & DAPLink
+current pcb (hadrware version >= V2.1) support both cmsis-dap & DAPLink
 (cmsis-dap use the stm32f103c8t6, and DAPLink use the stm32f103cbt6)
 
